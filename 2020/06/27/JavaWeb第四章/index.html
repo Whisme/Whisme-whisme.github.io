@@ -456,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    725
+                    729
                 </div>
                 
 
@@ -473,7 +473,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaWeb第四章"><a href="#JavaWeb第四章" class="headerlink" title="JavaWeb第四章"></a>JavaWeb第四章</h1><h2 id="①简述请求转发与重定向的异同？"><a href="#①简述请求转发与重定向的异同？" class="headerlink" title="①简述请求转发与重定向的异同？"></a>①简述请求转发与重定向的异同？</h2><ul>
+                <h1 id="JavaWeb第四章"><a href="#JavaWeb第四章" class="headerlink" title="JavaWeb第四章"></a>JavaWeb第四章</h1><h1 id="①简述请求转发与重定向的异同？"><a href="#①简述请求转发与重定向的异同？" class="headerlink" title="①简述请求转发与重定向的异同？"></a>①简述请求转发与重定向的异同？</h1><ul>
 <li>请求次数：重定向是浏览器向服务器发送一个请求并收到响应后再次向一个新地址发出请求，转发是服务器收到请求后为了完成响应跳转到一个新的地址；重定向至少请求两次，转发请求一次；</li>
 </ul>
 <ul>
@@ -505,34 +505,39 @@
 <p><font size=5>创建一个RequestIndexServlet</font></p>
 </blockquote>
 <ul>
-<li><p><font size=5>使用重定向：sendRedirect</font></p>
-</li>
-<li><p><font color=red size=4>response.sendRedirect(“/Chapter04/WebContent/index.jsp”);</font></p>
-<p>  package cn.itcast;</p>
-<p>  import java.io.IOException;<br>  import javax.servlet.ServletException;<br>  import javax.servlet.http.HttpServlet;<br>  import javax.servlet.http.HttpServletRequest;<br>  import javax.servlet.http.HttpServletResponse;</p>
-<p>  /**</p>
-<ul>
-<li><p>Servlet implementation class RequestIndexServlet</p>
-</li>
-<li><p>/<br>public class RequestIndexServlet extends HttpServlet {<br>   private static final long serialVersionUID = 1L;</p>
-<p>   /**</p>
-<ul>
-<li><p>@see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)</p>
-</li>
-<li><p>/<br>protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {<br>   // TODO Auto-generated method stub<br>   response.setContentType(“text/html;charset=utf-8”);<br>   response.sendRedirect(“/Chapter04/WebContent/index.jsp”);<br>}</p>
-<p>/**</p>
-</li>
-<li><p>@see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)</p>
-</li>
-<li><p>/<br>protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {<br>   // TODO Auto-generated method stub<br>   doGet(request, response);<br>}</p>
-</li>
+<li><font size=5>使用重定向：sendRedirect</font></li>
+<li><font color=red size=4>response.sendRedirect(“/Chapter04/WebContent/index.jsp”);</font></li>
 </ul>
-<p>}</p>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。"><a href="#③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。" class="headerlink" title="③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。"></a>③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。</h1><blockquote>
+<pre><code>package cn.itcast;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+/**
+* Servlet implementation class RequestIndexServlet
+*/
+public class RequestIndexServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    /**
+    * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+    */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        response.setContentType(&quot;text/html;charset=utf-8&quot;);
+        response.sendRedirect(&quot;/Chapter04/WebContent/index.jsp&quot;);
+    }
+
+    /**
+    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+    */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        doGet(request, response);
+    }
+
+}</code></pre><h1 id="③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。"><a href="#③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。" class="headerlink" title="③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。"></a>③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。</h1><blockquote>
 <p><font size=5>创建一个DownManagerServlet</font></p>
 </blockquote>
 <pre><code>package cn.itcast;
@@ -976,7 +981,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">900</span>&nbsp;字
+                class="white-color">904</span>&nbsp;字
             
             
             
