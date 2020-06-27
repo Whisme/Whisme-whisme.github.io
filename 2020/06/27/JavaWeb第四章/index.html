@@ -473,7 +473,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaWeb第四章"><a href="#JavaWeb第四章" class="headerlink" title="JavaWeb第四章"></a>JavaWeb第四章</h1><h1 id="①简述请求转发与重定向的异同？"><a href="#①简述请求转发与重定向的异同？" class="headerlink" title="①简述请求转发与重定向的异同？"></a>①简述请求转发与重定向的异同？</h1><ul>
+                <h1 id="JavaWeb第四章"><a href="#JavaWeb第四章" class="headerlink" title="JavaWeb第四章"></a>JavaWeb第四章</h1><h2 id="①简述请求转发与重定向的异同？"><a href="#①简述请求转发与重定向的异同？" class="headerlink" title="①简述请求转发与重定向的异同？"></a><font size=6>①简述请求转发与重定向的异同？</font></h2><ul>
 <li>请求次数：重定向是浏览器向服务器发送一个请求并收到响应后再次向一个新地址发出请求，转发是服务器收到请求后为了完成响应跳转到一个新的地址；重定向至少请求两次，转发请求一次；</li>
 </ul>
 <ul>
@@ -486,7 +486,7 @@
 <li><p>发生行为不同：重定向是客户端行为，转发是服务器端行为；</p>
 </li>
 </ul>
-<h2 id="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"><a href="#②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出" class="headerlink" title="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"></a>②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出</h2><blockquote>
+<h2 id="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"><a href="#②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出" class="headerlink" title="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"></a><font size=6>②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出</font></h2><blockquote>
 <p><font size=5>创建一个Jsp</font></p>
 </blockquote>
 <pre><code>&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=ISO-8859-1&quot;
@@ -501,7 +501,10 @@
 &lt;body&gt;
     这是一个Jsp文件
 &lt;/body&gt;
-&lt;/html&gt;</code></pre><h1 id="创建Servlet实现重定向功能"><a href="#创建Servlet实现重定向功能" class="headerlink" title="创建Servlet实现重定向功能"></a>创建Servlet实现重定向功能</h1><blockquote>
+&lt;/html&gt;</code></pre><blockquote>
+<p><font size=5>创建Servlet实现重定向功能</font></p>
+</blockquote>
+<blockquote>
 <p><font size=5>创建一个RequestIndexServlet</font></p>
 </blockquote>
 <ul>
@@ -537,7 +540,9 @@ public class RequestIndexServlet extends HttpServlet {
         doGet(request, response);
     }
 
-}</code></pre><h1 id="③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。"><a href="#③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。" class="headerlink" title="③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。"></a>③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。</h1><blockquote>
+}</code></pre><h2 id="③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。"><a href="#③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。" class="headerlink" title="③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。"></a><font size=6>③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。</h2></font>
+
+<blockquote>
 <p><font size=5>创建一个DownManagerServlet</font></p>
 </blockquote>
 <pre><code>package cn.itcast;
