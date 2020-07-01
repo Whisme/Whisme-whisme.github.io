@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaWeb第四章, 小王同学">
+    <meta name="keywords" content="jieba分词, 小王同学">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaWeb第四章 | 小王同学</title>
+    <title>jieba分词 | 小王同学</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaWeb第四章</h1>
+                    <h1 class="description center-align post-title">jieba分词</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Servlet%E9%87%8D%E5%AE%9A%E5%90%91-%E9%98%B2%E7%9B%97%E9%93%BE/">
-                                <span class="chip bg-color">Servlet重定向 防盗链</span>
+                            <a href="/tags/%E5%88%86%E8%AF%8D%E6%8F%92%E4%BB%B6-%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%87%E6%A1%A3/">
+                                <span class="chip bg-color">分词插件 导入导出文档</span>
                             </a>
                         
                     </div>
@@ -442,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/JavaWeb/" class="post-category">
-                                JavaWeb
+                            <a href="/categories/Python/" class="post-category">
+                                Python
                             </a>
                         
                     </div>
@@ -455,28 +455,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-27
+                    2020-07-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-01
+                    2020-07-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    729
+                    271
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -486,135 +486,45 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaWeb第四章"><a href="#JavaWeb第四章" class="headerlink" title="JavaWeb第四章"></a>JavaWeb第四章</h1><h2 id="①简述请求转发与重定向的异同？"><a href="#①简述请求转发与重定向的异同？" class="headerlink" title="①简述请求转发与重定向的异同？"></a><font size=5>①简述请求转发与重定向的异同？</font></h2><ul>
-<li>请求次数：重定向是浏览器向服务器发送一个请求并收到响应后再次向一个新地址发出请求，转发是服务器收到请求后为了完成响应跳转到一个新的地址；重定向至少请求两次，转发请求一次；</li>
-</ul>
-<ul>
-<li><p>地址栏不同：重定向地址栏会发生变化，转发地址栏不会发生变化；</p>
+                <h2 id="Pip安装速度过慢解决办法"><a href="#Pip安装速度过慢解决办法" class="headerlink" title="Pip安装速度过慢解决办法"></a>Pip安装速度过慢解决办法</h2><ul>
+<li><p>找到C:\Users\你的账户名\AppData\Roaming目录下</p>
 </li>
-<li><p>是否共享数据：重定向两次请求不共享数据，转发一次请求共享数据（在request级别使用信息共享，使用重定向必然出错）；</p>
+<li><p>创建一个pip.ini文件</p>
 </li>
-<li><p>跳转限制：重定向可以跳转到任意URL，转发只能跳转本站点资源；</p>
-</li>
-<li><p>发生行为不同：重定向是客户端行为，转发是服务器端行为；</p>
+<li><p>文件内输入以下内容</p>
+<pre><code>[global]
+timeout = 60000
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+use-mirrors = true
+mirrors = https://pypi.tuna.tsinghua.edu.cn
+
+文档中的链接地址还可以更换其他的如下：
+
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+豆瓣(douban) http://pypi.douban.com/simple/
+
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+
+中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/</code></pre></li>
+<li><p>通过选择国内镜像源，相当于你从国内的一些机构下载你所需的python第三方库，这样速度很快了。</p>
 </li>
 </ul>
-<h2 id="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"><a href="#②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出" class="headerlink" title="②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出"></a><font size=5>②请编写一个类，该类能够实现访问完app应用下的Servlet后，还能在浏览器地址栏中显示出</font></h2><blockquote>
-<p><font size=5>创建一个Jsp</font></p>
-</blockquote>
-<pre><code>&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=ISO-8859-1&quot;
-    pageEncoding=&quot;ISO-8859-1&quot;%&gt;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=ISO-8859-1&quot;&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-
-&lt;/head&gt;
-&lt;body&gt;
-    这是一个Jsp文件
-&lt;/body&gt;
-&lt;/html&gt;</code></pre><blockquote>
-<p><font size=5>创建Servlet实现重定向功能</font></p>
-</blockquote>
-<blockquote>
-<p><font size=5>创建一个RequestIndexServlet</font></p>
-</blockquote>
-<ul>
-<li><font size=5>使用重定向：sendRedirect</font></li>
-<li><font color=red size=4>response.sendRedirect(“/Chapter04/WebContent/index.jsp”);</font></li>
+<h2 id="安装jieba插件"><a href="#安装jieba插件" class="headerlink" title="安装jieba插件"></a>安装jieba插件</h2><ul>
+<li><p>可以通过在CMD命令下输以下命令直接安装</p>
+<pre><code>pip install jieba -i https://pypi.douban.com/simple/</code></pre><h2 id="使用jieba插接完成Python分词功能"><a href="#使用jieba插接完成Python分词功能" class="headerlink" title="使用jieba插接完成Python分词功能"></a>使用jieba插接完成Python分词功能</h2><pre><code>import jieba
+fR = open(&apos;D:\jieba\AA.txt&apos;, &apos;r&apos;, encoding=&apos;UTF-8&apos;)
+sent = fR.read()
+sent_list = jieba.cut(sent)
+fW = open(&apos;D:\jieba\BB.txt&apos;, &apos;w&apos;, encoding=&apos;UTF-8&apos;)
+fW.write(&apos; &apos;.join(sent_list))
+fR.close()
+fW.close()</code></pre></li>
 </ul>
-<pre><code>package cn.itcast;
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-/**
-* Servlet implementation class RequestIndexServlet
-*/
-public class RequestIndexServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
 
-    /**
-    * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-    */
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        response.setContentType(&quot;text/html;charset=utf-8&quot;);
-        response.sendRedirect(&quot;/Chapter04/WebContent/index.jsp&quot;);
-    }
-
-    /**
-    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-    */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        doGet(request, response);
-    }
-
-}</code></pre><h2 id="③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。"><a href="#③使用HttpServletRequest对象的getHeader-“referer”-方法实现下载资源防盗链的功能。" class="headerlink" title="③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。"></a><font size=6>③使用HttpServletRequest对象的getHeader(“referer”)方法实现下载资源防盗链的功能。</h2></font>
-
-<blockquote>
-<p><font size=5>创建一个DownManagerServlet</font></p>
-</blockquote>
-<pre><code>package cn.itcast;
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-/**
-* Servlet implementation class DownManagerServlet
-*/
-public class DownManagerServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-
-    /**
-    * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-    */
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        response.setContentType(&quot;text/html;charset-utf-8&quot;);
-        PrintWriter out = response.getWriter();
-        String  referer = request.getHeader(&quot;referer&quot;);
-        String sitePart = &quot;http://&quot; + request.getServerName();
-        if(referer != null &amp;&amp; referer.startsWith(sitePart)) {
-            out.println(&quot;dealing download...&quot;);
-        }else {
-            RequestDispatcher rd = request
-                    .getRequestDispatcher(&quot;/download.html&quot;);
-            rd.forward(request, response);
-        }
-    }
-
-    /**
-    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-    */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        doGet(request, response);
-    }
-
-}</code></pre><blockquote>
-<p><font size=5>在WebContent下创建一个download.html文件</font></p>
-</blockquote>
-<ul>
-<li><font size=4>href链接Chapter04/DownManagerServlet路径</font></li>
-</ul>
-<!DOCTYPE html>
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;Insert title here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;a href=&quot;/Chapter04/DownManagerServlet&quot;&gt;download&lt;/a&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
             </div>
             <hr/>
 
@@ -639,7 +549,7 @@ public class DownManagerServlet extends HttpServlet {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/06/27/JavaWeb%E7%AC%AC%E5%9B%9B%E7%AB%A0/">http://yoursite.com/2020/06/27/JavaWeb%E7%AC%AC%E5%9B%9B%E7%AB%A0/</a>
+                    <a href="http://yoursite.com/2020/07/01/jieba%E5%88%86%E8%AF%8D/">http://yoursite.com/2020/07/01/jieba%E5%88%86%E8%AF%8D/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -677,8 +587,8 @@ public class DownManagerServlet extends HttpServlet {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Servlet%E9%87%8D%E5%AE%9A%E5%90%91-%E9%98%B2%E7%9B%97%E9%93%BE/">
-                                    <span class="chip bg-color">Servlet重定向 防盗链</span>
+                                <a href="/tags/%E5%88%86%E8%AF%8D%E6%8F%92%E4%BB%B6-%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA%E6%96%87%E6%A1%A3/">
+                                    <span class="chip bg-color">分词插件 导入导出文档</span>
                                 </a>
                             
                         </div>
@@ -723,9 +633,10 @@ public class DownManagerServlet extends HttpServlet {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/01/jieba%E5%88%86%E8%AF%8D/">
                     <div class="card-image">
@@ -751,9 +662,9 @@ index-url = https:/
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -766,6 +677,7 @@ index-url = https:/
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -784,34 +696,35 @@ index-url = https:/
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/25/%E8%AE%B0%E5%BD%95Hexo%E5%88%9B%E5%BB%BA%E8%BF%87%E7%A8%8B/">
+                <a href="/2020/06/27/JavaWeb%E7%AC%AC%E5%9B%9B%E7%AB%A0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="记录Hexo创建过程">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="JavaWeb第四章">
                         
-                        <span class="card-title">记录Hexo创建过程</span>
+                        <span class="card-title">JavaWeb第四章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Hexo创建过程心路历程
-弄了一天了才基本完成整体布局，之前改改删删重复了几十次都不满意，基本上先完成页面的设置后，后续的插件和布局再慢慢添加就好啦。现在可以实现上传Blog就足够啦！保存好这次就不删了，免得重复来重复去的太麻烦了。
+                            JavaWeb第四章①简述请求转发与重定向的异同？
+请求次数：重定向是浏览器向服务器发送一个请求并收到响应后再次向一个新地址发出请求，转发是服务器收到请求后为了完成响应跳转到一个新的地址；重定向至少请求两次，转发请求一次；
 
 
+地址栏不同：
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%97%A5%E8%AE%B0/" class="post-category">
-                                    日记
+                            <a href="/categories/JavaWeb/" class="post-category">
+                                    JavaWeb
                                 </a>
                             
                             
@@ -821,8 +734,8 @@ index-url = https:/
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%B0%E5%BD%95%E6%97%A5%E5%B8%B8/">
-                        <span class="chip bg-color">记录日常</span>
+                    <a href="/tags/Servlet%E9%87%8D%E5%AE%9A%E5%90%91-%E9%98%B2%E7%9B%97%E9%93%BE/">
+                        <span class="chip bg-color">Servlet重定向 防盗链</span>
                     </a>
                     
                 </div>
